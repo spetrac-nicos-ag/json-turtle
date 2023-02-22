@@ -1,0 +1,28 @@
+{
+  "name": "@spetrac-nicos-ag/json-turtle",
+  "version": "1.0.0",
+  "description": "Convert turtle files into json.",
+  "main": "src/json-turtle.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "turtle",
+    "json",
+    "convert"
+  ],
+  "author": "spetrac@nicos-ag.com",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "n3": "^1.16.3"
+  },
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0"
+  },
+  "mocha": {
+    "bail": false,
+    "recursive": false,
+    "spec": "test/*.test.js"
+  }
+}
