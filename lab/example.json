@@ -1,0 +1,21 @@
+{
+    "id": "Person",
+    "type": "object",
+    "$queryAnchor": "current",
+    "$queryRef": "SELECT ?node WHERE { ?node rdf:type foaf:Person }",
+    "properties": {
+        "label": {
+            "$ref": "#/$defs/rdfsLabel"
+        }
+    },
+    "$defs": {
+        "rdfsLabel": {
+            "type": "array",
+            "default": [],
+            "items": {
+                "type": "string",
+                "$queryRef": "SELECT ?value WHERE { ?current rdfs:label ?value }"
+            }
+        }
+    }
+}
